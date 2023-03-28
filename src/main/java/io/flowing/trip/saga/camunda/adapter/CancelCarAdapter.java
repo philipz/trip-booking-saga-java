@@ -8,7 +8,7 @@ public class CancelCarAdapter implements JavaDelegate {
   @Override
   public void execute(DelegateExecution execution) throws Exception {
 
-     System.out.println("cancel car '"+ execution.getVariable("name") + "'");
+     System.out.println("cancel car for '"+ execution.getVariable("name") + "'");
     
   }
 

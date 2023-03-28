@@ -8,7 +8,7 @@ public class CancelHotelAdapter implements JavaDelegate {
   @Override
   public void execute(DelegateExecution execution) throws Exception {
 
-    System.out.println("cancel hotel '"+ execution.getVariable("name") + "'");
+    System.out.println("cancel hotel for '"+ execution.getVariable("name") + "'");
 
   }
 
