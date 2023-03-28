@@ -43,8 +43,9 @@ public class TripBookingSaga {
 //    Bpmn.writeModelToFile(file, saga.getModel());
   }
   
-  public void bookTrip() {
+  public void bookTrip(String tripName) {
     HashMap<String, Object> someVariables = new HashMap<>();
+    someVariables.put("name", tripName);
     // Could add some variables here - not used in simple demo
     camunda.getRuntimeService().startProcessInstanceByKey("trip", someVariables);
   }
